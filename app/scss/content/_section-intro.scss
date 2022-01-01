@@ -1,0 +1,42 @@
+.section-intro {
+  padding: 18rem 0rem;
+  background-color: $white;
+}
+.intro-wrapper {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.about-content {
+  display: flex;
+  align-items: flex-start;
+ 
+  &__left {
+    margin-right: 13.5rem;
+  }
+
+  &__right {
+
+    &-ul {
+        margin-bottom: 2.2rem !important;
+      &__list {
+        display: flex;
+        margin-bottom: 1.2rem;
+        align-items: center;
+        width: 100%;
+        max-width: 39rem;
+      }
+      &__img {
+        margin-right: 1.6rem;
+      }
+      &__link {
+        font-family: inherit;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 160%;
+        color: $navLink;
+      }
+    }
+  }
+}
+

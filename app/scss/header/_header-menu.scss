@@ -1,0 +1,78 @@
+//^ Logo and Nav
+.header-menu {
+  display: flex;
+  padding: 1.3rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  padding-top: 2rem;
+
+  &__logo {
+    display: block;
+    width: 130px;
+    height: 22px;
+    margin-right: 6rem;
+  }
+
+  &__nav {
+    // margin-right: 22.5rem;
+    &-link {
+      text-decoration: none;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: $navLink;
+      margin-right: 4rem;
+      &:last-child {
+        margin-right: 0rem;
+      }
+    }
+  }
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+//^/ Logo and Nav
+
+//^User-regist
+
+.header-menu__user {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 40rem;
+
+  &-login {
+    display: flex;
+    margin-left: 3.6rem;
+    align-items: center;
+    &__user-icon {
+      display: block;
+      margin-right: 0.6rem;
+      width: 20px;
+      height: 20px;
+    }
+    &__btn {
+      text-decoration: none;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: inherit;
+      line-height: 1.6;
+      color: $navLink;
+    }
+
+    span {
+      text-decoration: none;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: inherit;
+      line-height: 1.6;
+      color: $navLink;
+      margin: 0rem 0.6rem;
+    }
+  }
+}
+//^/ User-regist

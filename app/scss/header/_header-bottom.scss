@@ -1,0 +1,41 @@
+.header-bottoms__counters {
+  display: flex;
+  margin-bottom: 6rem;
+  justify-content: space-between;
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-left: 6.5rem;
+    &:first-child{
+        margin-left: 0;
+    }
+    &__num {
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 4.6rem;
+      line-height: 1.3;
+      color: $gray;
+      margin-right: 1.2rem;
+    }
+    &__text {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: $gray;
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        height: 8px;
+        width: 8px;
+        background: #FF3F3A;
+        border-radius: 50%;
+        margin-left: 6.6rem;
+    }
+
+    &:last-child::after{
+        content: none;
+      
+    }
+  }
+}
