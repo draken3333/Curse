@@ -1,7 +1,7 @@
 .btn {
   border-radius: 4px;
   width: 100%;
-  max-width: 20.3rem;
+  width: 20.3rem;
   height: 5.05rem;
 
   background: $btn-gradient;
@@ -32,6 +32,24 @@
   &--small {
     max-width: 148px;
     height: 52px;
+  }
+  &--extra__small {
+    width: 136px;
+    height: 44px;
+    font-size: 14px;
+  }
 
+  &--transparent {
+    background: $white;
+    color: #f75e05;
+    border: 2px solid;
+    border-color: linear-gradient(#f75e05, #ff3f3a);
+    background: transparent;
+
+    &:hover {
+      border: 2px solid transparent;
+      background: $btn-gradient;
+      color: $white;
+    }
   }
 }

@@ -1,0 +1,149 @@
+.section-our-team {
+  background: $gray200;
+  padding-top: 9rem;
+  background-image: url(../../images/backgrounds/our-team-bg.jpg);
+}
+.our-team {
+  display: flex;
+  justify-content: space-between;
+}
+.our-team-card {
+  max-width: 275px;
+
+  width: 100%;
+  transition: all 0.3s linear;
+  margin-top: 6rem;
+}
+
+.our-team-card__img {
+  position: relative;
+  overflow: hidden;
+
+  &-social {
+    position: absolute;
+
+    bottom: 20px;
+    z-index: 100;
+    right: 0;
+
+    &__link {
+      margin-right: 12px;
+      visibility: hidden;
+      transform: translateY(50px);
+      svg {
+        opacity: 0.6;
+        transition: opacity 0.3s linear;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.our-team-background {
+  visibility: hidden;
+  position: absolute;
+  transition: all 0.3s ease;
+  top: 0;
+  transform: translateY(50px);
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 33, 44, 0) 43.9%,
+    rgba(30, 33, 44, 0.03) 55.21%,
+    rgba(30, 33, 44, 0.33) 68.73%,
+    rgba(30, 33, 44, 0.56) 76.17%,
+    rgba(30, 33, 44, 0.768225) 83.75%,
+    rgba(30, 33, 44, 0.92) 91.49%,
+    #1e212c 100%
+  );
+  z-index: 70;
+}
+
+.our-team-card:hover {
+  .our-team-card__img-social__link,
+  .our-team-background {
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}
+
+.our-team-card__text {
+  text-align: center;
+  font-family: $lato;
+  &-name {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $navLink;
+    margin-top: 1.6rem;
+  }
+
+  &-position {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    color: $gray700;
+  }
+}
+
+//& COMMENTS
+.comments {
+  padding: 18rem 0rem;
+}
+.comment-text {
+  margin-bottom: 6rem;
+}
+.commetns-slider-box__card {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 6.4rem 10.5rem 6.4rem 16rem;
+  background: $white;
+  position: relative;
+
+  &-text {
+    font-family: $lato;
+    font-size: 2rem;
+    line-height: 1.5;
+
+    color: $navLink;
+    margin-bottom: 2.4rem;
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+      margin-right: 2rem;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &__info {
+      font-family: $lato;
+      &-name {
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: $gray;
+      }
+      &-location {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $gray700;
+      }
+    }
+  }
+}
+git 
+
+.comma-svg {
+  position: absolute;
+  top: 64px;
+  left: 100px;
+}

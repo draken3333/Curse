@@ -1,0 +1,33 @@
+.section-certificate {
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.certificate-info {
+  padding: 5px;
+  width: 100%;
+  max-width: 41rem;
+
+
+
+  &__text {
+    &-subtitle {
+      margin-top: 3.5rem;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+      color: $navLink;
+    }
+  }
+}
+
+
+.certificate-lables {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cerificate-box {
+  display: flex;
+  justify-content: space-between;
+}
