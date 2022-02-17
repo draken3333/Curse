@@ -1,0 +1,39 @@
+.section-miss {
+  padding: 12rem 0rem 18rem 0rem;
+  background: url(../../images/backgrounds/miss-bg.jpg);
+}
+.miss-text {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 6rem;
+}
+
+.form-subscribe {
+  display: flex;
+  justify-content: center;
+}
+
+.miss-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  input {
+    width: 100%;
+    max-width: 422px;
+    margin-right: 24px;
+    background: $white;
+    border: 1px solid $gray400;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 13px 0px 13px 16px;
+    &::placeholder {
+      font-family: $lato;
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: $gray600;
+    }
+  }
+}
